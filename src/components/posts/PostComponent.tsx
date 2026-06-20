@@ -19,7 +19,7 @@ export const PostComponent = async ({params}: Props) => {
             </div>
             <div className='italic'>
                 {
-                    author && <span><Link href={'/users/' + author.id.toString()}>Author: {author.name}</Link></span>
+                    author && <span>Author: <Link href={'/users/' + author.id.toString()} className='underline'>{author.name}</Link></span>
                 }
             </div>
         </article>

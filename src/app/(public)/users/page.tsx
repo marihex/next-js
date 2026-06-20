@@ -3,10 +3,9 @@ import {UsersComponent} from "@/src/components/users/UsersComponent";
 
 const UsersPage = () => {
     return (
-        <section className='py-3'>
-            <h1 className='text-center text-2xl'>Users</h1>
+        <main className='py-3'>
            <UsersComponent/>
-        </section>
+        </main>
     );
 };
 

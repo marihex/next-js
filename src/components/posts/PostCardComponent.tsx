@@ -17,7 +17,7 @@ const author = users.find(user => user.id === post.userId)
             </div>
             <div>
                 { author &&
-                <span className='italic'>Author: <Link href={'/users/' + author.id.toString()}>{author.name}</Link></span>
+                <span className='italic'>Author: <Link href={'/users/' + author.id.toString()} className='underline'>{author.name}</Link></span>
                 }
             </div>
         </article>
