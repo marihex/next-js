@@ -4,7 +4,7 @@ import {users} from "@/src/helpers/fetchDataHelpers";
 import Link from "next/link";
 
 type Props = {
-    params: Promise<{ id: string, title: string }>
+    params: Promise<{ id: string}>
 }
 
 export const PostComponent = async ({params}: Props) => {

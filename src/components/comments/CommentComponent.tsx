@@ -4,7 +4,7 @@ import {IComment} from "@/src/models/IComment";
 import Link from "next/link";
 
 type Props = {
-    params: Promise<{ id: string, name: string }>
+    params: Promise<{ id: string }>
 }
 
 export const CommentComponent = async ({params}: Props) => {

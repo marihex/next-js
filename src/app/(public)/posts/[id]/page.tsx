@@ -1,18 +1,21 @@
 import React from 'react';
 import {Metadata} from "next";
 import {PostComponent} from "@/src/components/posts/PostComponent";
+import {getById} from "@/src/services/api.services";
+import {IPost} from "@/src/models/IPost";
 
 
 type Props = {
-    params: Promise<{ id: string, title: string }>
+    params: Promise<{ id: string}>
 }
 
 export const generateMetadata = async ({params}:Props): Promise<Metadata> => {
-    const {title} = await params;
+    const {id} = await params;
+    const post = await getById<IPost>('/posts/', Number(id))
 
     return {
-        title: `${title} - Blog Post`,
-        description: `${title} - Blog Post`
+        title: `${post.title} - Blog Post Title`,
+        description: `${post.title} - Blog Post Description`,
     }
 }
 
