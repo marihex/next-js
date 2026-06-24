@@ -13,7 +13,11 @@
     "react": "^19.2.7",
     "react-dom": "^19.2.7",
     "better-sqlite3": "^12.11.1",
-    "@types/better-sqlite3": "^7.6.13"
+    "@types/better-sqlite3": "^7.6.13",
+    "zod": "^4.4.3",
+    "@hookform/resolvers": "^5.4.0",
+    "react-hook-form": "^7.80.0"
+
   },
   "overrides": {
     "postcss": "^8.5.10"
