@@ -6,6 +6,7 @@ const UsersPage = async () => {
 
     return (
         <div>
+            <h2>{Date.now()}</h2>
             {
                 users.map(user => <div key={user.id}>{user.name}</div>)
             }
